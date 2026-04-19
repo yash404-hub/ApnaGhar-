@@ -69,13 +69,18 @@ app.post('/api/config', protect, ownerOnly, (req, res) => {
 });
 
 // Serve Frontend in Production
-if (process.env.NODE_ENV === 'production') {
-  const frontendPath = path.join(__dirname, '../frontend/dist');
+if (process.env.NODE_ENV === 'production' || process.env.RENDER) {
+  const frontendPath = path.resolve(__dirname, '../frontend/dist');
+  console.log('Serving frontend from:', frontendPath);
+  
   app.use(express.static(frontendPath));
 
-   app.use((req, res) => {
-     res.sendFile(path.resolve(frontendPath, 'index.html'));
-   });
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api')) {
+      return next();
+    }
+    res.sendFile(path.join(frontendPath, 'index.html'));
+  });
 } else {
   app.get('/', (req, res) => {
     res.send('ApnaGhar API is running with Socket.IO...');
