@@ -10,6 +10,7 @@ const tenantRoutes = require('./routes/tenantRoutes');
 const path = require('path');
 
 dotenv.config();
+process.env.JWT_SECRET = process.env.JWT_SECRET || 'apnaghar_secret_key_123';
 connectDB();
 
 const app = express();
