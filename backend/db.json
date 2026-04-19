@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "_id": "owner123",
+      "name": "Admin Owner",
+      "phone": "1234567890",
+      "password": "$2b$10$VXhGXEKzdrmbVLSNWtfpoe5eAQenEvRJsXONWJq/EvYemp2mFXpdq",
+      "role": "OWNER",
+      "createdAt": "2026-04-19T10:47:39.782Z"
+    },
+    {
+      "_id": "aesbpv7sj",
+      "name": "yash kumar gupta",
+      "phone": "9099113564",
+      "password": "$2b$10$kL/fR21Iig1jJw8kRhIXkO70xWKX1ZXdkAoDWUgtqO9qkLJAsD8F.",
+      "role": "TENANT",
+      "createdAt": "2026-04-19T11:03:44.697Z"
+    },
+    {
+      "_id": "m2cq89rss",
+      "name": "Shivam jaiswal",
+      "phone": "1212343456",
+      "password": "$2b$10$OTEnm8Dxl6cXiaxPDrgUce1v0u6ny5MGuYYXpOob0euQh7.usEaAS",
+      "role": "TENANT",
+      "createdAt": "2026-04-19T15:48:30.955Z"
+    }
+  ],
+  "tenants": [
+    {
+      "_id": "c41i2p2xk",
+      "user": "aesbpv7sj",
+      "age": null,
+      "aadhaarNumber": "345883213423",
+      "roomNumber": "1",
+      "rentAmount": 2500,
+      "rentPaidStatus": "Paid",
+      "paymentHistory": [
+        {
+          "amount": 2500,
+          "month": "April 2026",
+          "date": "2026-04-19",
+          "status": "Paid"
+        }
+      ],
+      "fatherName": "vijay guota",
+      "motherName": "anita gupta",
+      "emergencyContact": "4523451224",
+      "reasonForStay": "neet preparation",
+      "joiningDate": "2026-04-01",
+      "wifiEnabled": false,
+      "wifiDetails": {
+        "name": "ApnaGhar_WiFi",
+        "password": "apnaghar@123"
+      },
+      "createdAt": "2026-04-19T11:03:44.702Z",
+      "payment": {
+        "amount": 2500,
+        "month": "April 2026",
+        "date": "2026-04-19",
+        "status": "Paid"
+      },
+      "updatedAt": "2026-04-19T11:03:57.326Z"
+    },
+    {
+      "_id": "isjy00by3",
+      "user": "m2cq89rss",
+      "age": null,
+      "aadhaarNumber": "90128734",
+      "roomNumber": " ",
+      "rentAmount": 2000,
+      "rentPaidStatus": "Paid",
+      "paymentHistory": [
+        {
+          "amount": 2000,
+          "month": "April 2026",
+          "date": "2026-04-19",
+          "status": "Paid"
+        }
+      ],
+      "fatherName": "",
+      "motherName": "",
+      "emergencyContact": "",
+      "reasonForStay": "",
+      "joiningDate": "2026-04-01",
+      "wifiEnabled": false,
+      "wifiDetails": {
+        "name": "ApnaGhar_WiFi",
+        "password": "apnaghar@123"
+      },
+      "createdAt": "2026-04-19T15:48:30.961Z",
+      "payment": {
+        "amount": 2000,
+        "month": "April 2026",
+        "date": "2026-04-19",
+        "status": "Paid"
+      },
+      "updatedAt": "2026-04-19T17:26:35.255Z"
+    }
+  ],
+  "complaints": [
+    {
+      "_id": "8h93lg7z7",
+      "userId": "aesbpv7sj",
+      "name": "yash kumar gupta",
+      "subject": "wifi is not working ",
+      "message": "from morinng wifi is not working please check it and resolve it ",
+      "status": "Resolved",
+      "createdAt": "2026-04-19T17:48:05.744Z"
+    },
+    {
+      "_id": "pqu80fofn",
+      "userId": "aesbpv7sj",
+      "name": "yash kumar gupta",
+      "subject": "bad touch",
+      "message": "v=bad touch",
+      "status": "Resolved",
+      "createdAt": "2026-04-19T19:01:47.425Z"
+    }
+  ],
+  "config": {
+    "ownerContact": "9099113546",
+    "emergencyContact": ""
+  }
+}

@@ -1,7 +1,6 @@
 node_modules
 .env
 frontend/dist
-backend/db.json
 .DS_Store
 *.log
 npm-debug.log*

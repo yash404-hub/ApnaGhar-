@@ -15,6 +15,7 @@ const Dashboard = () => {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   useEffect(() => {
+    if (!user) return;
     const fetchData = async () => {
       try {
         const [profileRes, configRes] = await Promise.all([
@@ -45,7 +46,7 @@ const Dashboard = () => {
       }
     };
     fetchData();
-  }, [user.role]);
+  }, [user]);
 
   const openWhatsApp = () => {
     const message = encodeURIComponent(`Hi, I'm ${user.name} from Room ${profile?.roomNumber}. I need to discuss something regarding my stay.`);

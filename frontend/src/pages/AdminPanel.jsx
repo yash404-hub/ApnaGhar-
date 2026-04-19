@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Users, UserPlus, Search, Trash2, Edit, CheckCircle, XCircle, 
   X, Phone, Lock, Hash, Calendar, Briefcase, User as UserIcon, 
-  PlusCircle, CreditCard, Wifi, Shield, ShieldOff, Trophy, Settings, Banknote
+  PlusCircle, CreditCard, Wifi, Shield, ShieldOff, Trophy, Settings, Banknote, Camera
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
