@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import API from '../services/api';
 import { motion } from 'framer-motion';
-import { CreditCard, Camera, Zap, IndianRupee, ArrowRight, CheckCircle2 } from 'lucide-react';
+import { CreditCard, Camera, Zap, ArrowRight, CheckCircle2, Banknote } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
@@ -97,8 +97,8 @@ const PayRent = () => {
         {/* Step 1: Base Rent */}
         <div className="flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/10">
           <div className="flex items-center gap-4">
-            <div className="p-3 rounded-xl bg-blue-500/20 text-blue-400">
-              <IndianRupee className="w-6 h-6" />
+            <div className="p-3 rounded-2xl bg-green-500/20 text-green-400">
+              <Banknote className="w-6 h-6" />
             </div>
             <div>
               <p className="text-white/40 text-xs uppercase font-bold tracking-widest">Base Rent</p>

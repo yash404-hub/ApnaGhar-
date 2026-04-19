@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Users, UserPlus, Search, Trash2, Edit, CheckCircle, XCircle, 
   X, Phone, Lock, Hash, Calendar, Briefcase, User as UserIcon, 
-  PlusCircle, CreditCard, Wifi, Shield, ShieldOff, IndianRupee, Trophy, Settings
+  PlusCircle, CreditCard, Wifi, Shield, ShieldOff, Trophy, Settings, Banknote
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
@@ -252,7 +252,7 @@ const AdminPanel = () => {
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="p-3 rounded-2xl bg-green-500/20 text-green-400">
-              <IndianRupee className="w-8 h-8" />
+              <Banknote className="w-8 h-8" />
             </div>
             <div>
               <p className="text-white/40 text-xs font-bold uppercase tracking-widest">Monthly Earning</p>
