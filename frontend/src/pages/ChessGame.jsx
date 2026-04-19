@@ -5,7 +5,7 @@ import { Chessboard } from 'react-chessboard';
 import { io } from 'socket.io-client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
-import { Send, User, Trophy, Clock, ArrowLeft, Share2, MessageCircle } from 'lucide-react';
+import { Send, User, Trophy, Clock, ArrowLeft, Share2, MessageSquare } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const socket = io(import.meta.env.VITE_SOCKET_URL || window.location.origin);
@@ -255,7 +255,7 @@ const ChessGame = () => {
 
         <div className="glass-card p-6 flex flex-col h-[400px]">
           <h2 className="text-xl font-bold text-white flex items-center gap-2 mb-4">
-            <MessageCircle className="w-5 h-5 text-purple-400" /> Game Chat
+            <MessageSquare className="w-5 h-5 text-purple-400" /> Game Chat
           </h2>
           <div className="flex-1 overflow-y-auto space-y-4 mb-4 pr-2 custom-scrollbar">
             {messages.map((msg, idx) => (

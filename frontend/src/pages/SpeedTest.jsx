@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Wifi, Gauge, ArrowRight, Zap, RefreshCcw } from 'lucide-react';
+import { Wifi, Activity, ArrowRight, Zap, RefreshCcw } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const SpeedTest = () => {
@@ -88,7 +88,7 @@ const SpeedTest = () => {
             className="w-1 h-32 bg-gradient-to-t from-blue-500 to-transparent absolute bottom-1/2 origin-bottom rounded-full"
           />
           <div className="text-center z-10">
-            <Gauge className={`w-16 h-16 mx-auto mb-4 ${testing ? 'text-blue-400 animate-pulse' : 'text-white/10'}`} />
+            <Activity className={`w-16 h-16 mx-auto mb-4 ${testing ? 'text-blue-400 animate-pulse' : 'text-white/10'}`} />
             <p className="text-white/40 font-bold uppercase tracking-widest text-xs">
               {testing ? 'Analyzing...' : 'Ready'}
             </p>

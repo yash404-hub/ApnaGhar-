@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import API from '../services/api';
 import { motion } from 'framer-motion';
-import { MessageSquare, CheckCircle2, Clock, Trash2, User } from 'lucide-react';
+import { MessageSquare, CheckCircle, Clock, Trash2, User } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const AdminComplaints = () => {
@@ -82,7 +82,7 @@ const AdminComplaints = () => {
                   onClick={() => updateStatus(c._id, 'Resolved')}
                   className="flex items-center gap-2 px-4 py-2 rounded-xl bg-green-500/10 text-green-400 text-xs font-bold hover:bg-green-500/20 transition-all"
                 >
-                  <CheckCircle2 className="w-4 h-4" /> Mark Resolved
+                  <CheckCircle className="w-4 h-4" /> Mark Resolved
                 </button>
               </div>
             </div>

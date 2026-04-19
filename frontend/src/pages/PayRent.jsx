@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import API from '../services/api';
 import { motion } from 'framer-motion';
-import { CreditCard, Camera, Zap, ArrowRight, CheckCircle2, Banknote } from 'lucide-react';
+import { CreditCard, Camera, Zap, ArrowRight, CheckCircle, Banknote } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
@@ -105,7 +105,7 @@ const PayRent = () => {
               <p className="text-2xl font-bold text-white">₹{profile?.rentAmount}</p>
             </div>
           </div>
-          <CheckCircle2 className="w-6 h-6 text-green-400" />
+          <CheckCircle className="w-6 h-6 text-green-400" />
         </div>
 
         {/* Step 2: Electricity Bill */}

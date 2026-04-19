@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import API from '../services/api';
 import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageSquare, Send, Clock, CheckCircle2, AlertCircle, Plus } from 'lucide-react';
+import { MessageSquare, Send, Clock, CheckCircle, AlertCircle, Plus } from 'lucide-react';
 import toast from 'react-hot-toast';
 
 const Complaints = () => {
@@ -47,7 +47,7 @@ const Complaints = () => {
 
   const getStatusIcon = (status) => {
     switch (status) {
-      case 'Resolved': return <CheckCircle2 className="w-4 h-4 text-green-400" />;
+      case 'Resolved': return <CheckCircle className="w-4 h-4 text-green-400" />;
       case 'In Progress': return <Clock className="w-4 h-4 text-yellow-400" />;
       default: return <AlertCircle className="w-4 h-4 text-white/40" />;
     }
