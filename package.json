@@ -2,11 +2,15 @@
   "name": "apnaghar-monorepo",
   "version": "1.0.0",
   "private": true,
+  "dependencies": {
+    "vite": "^8.0.4",
+    "@vitejs/plugin-react": "^6.0.1"
+  },
   "engines": {
     "node": "20"
   },
   "scripts": {
-    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "build": "npm install && npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node backend/server.js"
   }
 }
