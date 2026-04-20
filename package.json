@@ -7,7 +7,8 @@
     "@vitejs/plugin-react": "^6.0.1"
   },
   "engines": {
-    "node": "20"
+    "node": "20.x",
+    "npm": "10.x"
   },
   "scripts": {
     "build": "npm install && npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
